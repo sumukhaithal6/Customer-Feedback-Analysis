@@ -1,0 +1,623 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hotels</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style2.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i>
+        <i class="fa fa-phone"></i>
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <a href="{% url 'landing-page' %}"><button class="btn btn-success">Home</button></a>
+        
+    </div>
+  </header>
+
+  
+
+  <main id="main">
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Hotels</h3>
+          <h4>Choose your hotel!</h4>
+        </header>
+
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Angsana_Oasis_Spa_&_Resort.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Angsana%20Oasis%20Spa%20&%20Resort">Angsana Oasis Spa & Resort</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/bloomrooms_@_Indiranagar.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/bloomrooms @ Indiranagar">bloomrooms @ Indiranagar</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Treebo_Tryst_Monarch.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Treebo Tryst Monarch">Treebo Tryst Monarch</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Treebo_Trend_President_Suites.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Treebo Trend Orchard Suites">Treebo Trend Orchard Suites</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/The_Windflower_Prakruthi_Bangalore.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/The Windflower Prakruthi">The Windflower Prakruthi</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/The_Signature_Inn.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/The Signature Inn">The Signature Inn</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/The_Park_Bangalore.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/The Park Bangalore">The Park Bangalore</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/The_Monarch_Luxur.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/The Monarch Luxur">The Monarch Luxur</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Taj_West_End.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Taj West End">Taj West End</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/The_Lalit_Ashok.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/The Lalit Ashok">The Lalit Ashok</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Conrad_Bengaluru.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Conrad Bengaluru">Conrad Bengaluru</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Melange_Astris.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Melange Astris">Melange Astris</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Casa_Cottage.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Casa Cottage">Casa Cottage</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Golden_Palms_Hotel_&_Spa.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Golden Palms Hotel & Spa">Golden Palms Hotel & Spa</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/The_Gateway_Hotel_on_Residency_Road.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/The Gateway Hotel on Residency Road">The Gateway Hotel</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Nandhana_Grand.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Nandhana Grand">Nandhana Grand</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Palm_Meadows_Club.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Palm Meadows Club">Palm Meadows Club</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Fortune_Select_Trinity.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Fortune Select Trinity">Fortune Select Trinity</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Hotel_Swagath.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Hotel Swagath">Hotel Swagath</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Hotel_Royal_Orchid_Suites,_Whitefield,_Bangalore.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Hotel Royal Orchid Suites, Whitefield, Bangalore">Hotel Royal Orchid Suites</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Hyatt_Centric_MG_Road_Bangalore.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Hyatt Centric MG Road Bangalore">Hyatt Centric</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>             
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/ibis_Bengaluru_Outer_Ring_Road_Hotel.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/ibis Bengaluru Outer Ring Road Hotel">ibis Bengaluru</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>    
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Arama_Suites.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Arama Suites">Arama Suites</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Citrus_Cunningham.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Citrus Cunningham">Citrus Cunningham</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Shangri-La_Hotel_Bengaluru.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Shangri-La Hotel Bengaluru">Shangri-La Hotel</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Sheraton_Grand_Bangalore_Hotel_at_Brigade_Gateway.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Sheraton Grand Bangalore Hotel at Brigade Gateway">Sheraton Grand Bangalore</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Radisson_Bengaluru_City_Center.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Radisson Bengaluru City Center">Radisson Bengaluru</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Holiday_Village.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Holiday Village">Holiday Village</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Fantasy_Golf_Resort.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Fantasy Golf Resort">Fantasy Golf Resort</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Springs_Hotel_&_Spa.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Springs Hotel & Spa">Springs Hotel & Spa</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>                                                                          
+    
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Taj_Yeshwantpur,_Bengaluru.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Taj Yeshwantpur, Bengaluru">Taj Yeshwantpur, Bengaluru</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Ibis_Bengaluru_City_Centre_Hotel.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Ibis Bengaluru City Centre Hotel">Ibis Bengaluru City Centre</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Ankit_Vista_Green_Village.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Ankit Vista Green Village">Ankit Vista Green Village</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Golden_Tulip_Bangalore_Electronics_City.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Golden Tulip Bangalore Electronics Citu">Golden Tulip Bangaloe</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Maple_Suites,_Serviced_Residences.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Maple Suites, Serviced Residences">Maple Suites</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Laika_Boutique_Stay.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Laika Boutique Stay">Laika Boutique Stay</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Taj_MG_Road,_Bengaluru.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Taj MG Road, Bengaluru">Taj MG Road</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>     
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Vellara_Hotel.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Vellara Hotel">Vellara Hotel</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Fiestaa_Resort-n-Events_Venue.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Fiestaa Resort-n-Events Venue">Fiestaa Resort-n-Events</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'img/portfolio/image/Ramanashree_California_Resort_Bangalore.jpg' %}" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="localhost:8000/categories/Ramanashree California Resort Bangalore">Ramanashree Resort</a></h4>
+                <p>Bengaluru</p>
+              </div>
+            </div>
+          </div>                                           
+          
+    </section><!-- #portfolio -->
+
+    
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    
+      
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>CritiQali</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/superfish/hoverIntent.js' %}"></script>
+  <script src="{% static 'lib/superfish/superfish.min.js' %}"></script>
+  <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+  <script src="{% static 'lib/touchSwipe/jquery.touchSwipe.min.js' %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main2.js' %}"></script>
+
+</body>
+</html>
