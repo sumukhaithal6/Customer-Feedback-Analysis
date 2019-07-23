@@ -11,7 +11,21 @@
 
   <title>Hotels</title>
 
+  <style type="text/css">
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      padding-bottom: 20px;
+    }
+  </style>
+
   <!-- Custom fonts for this theme -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -29,7 +43,12 @@
       <a href="{% url 'hotel-int' %}"><button class="btn btn-primary btn-xl">Hotels</button></a>
       <!-- Portfolio Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-        <div>{{buc.name}}</div>
+        <div>{{buc.name}}</div><br>
+        
+          
+        
+          
+        <h4 align="center">Most Critical Issues</h4>
       </h2>
 
       <!-- Icon Divider -->
@@ -45,35 +64,11 @@
       <div class="row">
 
         <!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <!-- <i class="fas fa-plus fa-3x"></i> -->
-                <h4 class="text-uppercase mb-4">Ambience</h4>
-              </div>
-            </div>
-            <img class="img-fluid" src="{% static 'img/portfolio/ambience.jpg' %}" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <h4 class="text-uppercase mb-4">Amenities</h4>
-              </div>
-            </div>
-            <img class="img-fluid" src="{% static 'img/portfolio/amenities.jpg' %}" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
                 <h4 class="text-uppercase mb-4">Cleanliness</h4>
               </div>
             </div>
@@ -81,9 +76,9 @@
           </div>
         </div>
 
-        <!-- Portfolio Item 4 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <h4 class="text-uppercase mb-4">Food</h4>
@@ -93,20 +88,44 @@
           </div>
         </div>
 
-        <!-- Portfolio Item 5 -->
+        <!-- Portfolio Item 3 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                <h4 class="text-uppercase mb-4">Basic Failities</h4>
+                <h4 class="text-uppercase mb-4">Basic Facilities</h4>
               </div>
             </div>
             <img class="img-fluid" src="{% static 'img/portfolio/facility.jpg' %}" alt="">
           </div>
         </div>
 
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <h4 class="text-uppercase mb-4">Ambience</h4>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/portfolio/ambience.jpg' %}" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 5 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <h4 class="text-uppercase mb-4">Amenities</h4>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/portfolio/amenities.jpg' %}" alt="">
+          </div>
+        </div>
+
         <!-- Portfolio Item 6 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-3">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -118,7 +137,7 @@
         </div>
 
         <!-- Portfolio Item 7 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-3">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -126,16 +145,17 @@
               </div>
             </div>
             <img class="img-fluid" src="{% static 'img/portfolio/staff.jpg' %}" alt="">
+
+            <!-- <img class="img-fluid" src="{% static 'img/portfolio/bloomrooms @ Indiranagar.jpg' %}" alt=""> -->
+            <!-- <img src="{% static buc.image %}" > -->
           </div>
         </div>
-
+        <img class="center-image" src="{% static buc.image %}" alt="">
       </div>
       <!-- /.row -->
 
     </div>
   </section>
-
-  
 
   <!-- Footer -->
   <footer class="footer text-center">
@@ -167,17 +187,17 @@
         </div>
 
         <!-- Footer About Text -->
-        
+        </div>
 
       </div>
-    </div>
   </footer>
 
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
-    <div class="container">
+    
       <small>Copyright &copy; CritiQali 2019</small>
-    </div>
+
+    
   </section>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -216,9 +236,28 @@
                 <!-- <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt=""> -->
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">
-                  {% for i in buc.ambience %}
-                    <p>{{i}}</p>
-                  {% endfor %}
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Issue No.</th>
+                          <th scope="col">Review</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Source</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in buc.ambience %}
+                        <tr>
+                          <th scope="row">{{i.0}}</th>
+                          <td>{{i.1}}</td>
+                          <td>{{i.2}}</td>
+                          <td>TripAdvisor</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
                 </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -259,9 +298,28 @@
                 <!-- <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt=""> -->
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">
-                  {% for i in buc.amenities %}
-                    <p>{{i}}</p>
-                  {% endfor %}
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Issue No.</th>
+                          <th scope="col">Review</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Source</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in buc.amenities %}
+                        <tr>
+                          <th scope="row">{{i.0}}</th>
+                          <td>{{i.1}}</td>
+                          <td>{{i.2}}</td>
+                          <td>TripAdvisor</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
                 </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -302,9 +360,28 @@
                 <!-- <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt=""> -->
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">
-                  {% for i in buc.cleanliness %}
-                    <p>{{i}}</p>
-                  {% endfor %}
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Issue No.</th>
+                          <th scope="col">Review</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Source</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in buc.cleanliness %}
+                        <tr>
+                          <th scope="row">{{i.0}}</th>
+                          <td>{{i.1}}</td>
+                          <td>{{i.2}}</td>
+                          <td>TripAdvisor</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
                 </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -345,9 +422,28 @@
                 <!-- <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt=""> -->
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">
-                  {% for i in buc.food %}
-                    <p>{{i}}</p>
-                  {% endfor %}
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Issue No.</th>
+                          <th scope="col">Review</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Source</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in buc.food %}
+                        <tr>
+                          <th scope="row">{{i.0}}</th>
+                          <td>{{i.1}}</td>
+                          <td>{{i.2}}</td>
+                          <td>TripAdvisor</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
                 </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -388,9 +484,28 @@
                <!--  <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt=""> -->
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">
-                  {% for i in buc.price %}
-                    <p>{{i}}</p>
-                  {% endfor %}
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Issue No.</th>
+                          <th scope="col">Review</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Source</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in buc.price %}
+                        <tr>
+                          <th scope="row">{{i.0}}</th>
+                          <td>{{i.1}}</td>
+                          <td>{{i.2}}</td>
+                          <td>TripAdvisor</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
                 </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -432,9 +547,28 @@
                <!--  <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt=""> -->
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">
-                  {% for i in buc.facility %}
-                    <p>{{i}}</p>
-                  {% endfor %}
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Issue No.</th>
+                          <th scope="col">Review</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Source</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in buc.facility %}
+                        <tr>
+                          <th scope="row">{{i.0}}</th>
+                          <td>{{i.1}}</td>
+                          <td>{{i.2}}</td>
+                          <td>TripAdvisor</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
                 </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -475,9 +609,28 @@
                 <!-- <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt=""> -->
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">
-                  {% for i in buc.staff %}
-                    <p>{{i}}</p>
-                  {% endfor %}
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Issue No.</th>
+                          <th scope="col">Review</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Source</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for i in buc.staff %}
+                        <tr>
+                          <th scope="row">{{i.0}}</th>
+                          <td>{{i.1}}</td>
+                          <td>{{i.2}}</td>
+                          <td>TripAdvisor</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
                 </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
