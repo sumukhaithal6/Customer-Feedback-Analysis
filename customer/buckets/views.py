@@ -33,7 +33,7 @@ def categories(request, hotelname):
 
 def fun_airline(search_topic):
     #print(search_topic)
-    df=pd.read_csv("file:///home/spielerr/Spielerr/MIL%2019/code/Customer-Feedback-Analysis/customer/buckets/final_airline.csv")
+    df=pd.read_csv("file:///home/spielerr/Spielerr/MIL%2019/code/Customer-Feedback-Analysis/customer/buckets/final_airline2.csv")
     df_temp=df[df['Airline']==search_topic]
 
     buckets={'ambience':[],'amenities':[],'checkin':[],'cleanliness':[],'food':[],'price':[],'service':[], 'name':search_topic}
@@ -45,7 +45,7 @@ def fun_airline(search_topic):
         for index,row in df_bucket.iterrows():
             if len(buckets[bucket])>4:
                 break
-            buckets[bucket].append((ctr,row['Review'],row['Recency']))
+            buckets[bucket].append((ctr,row['Review'],row['Recency'],row['From'],row['To'],row['Class']))
             ctr+=1
     
     #buckets={'name':search_topic,'ambience':[ambience,amb_date], 'food':[food,food_date], 'staff':[staff,staff_date], 'amenities':[amenities,amen_date], 'cleanliness':[cleanliness,clean_date], 'facility':[facility,fac_date], 'price':[price, price_date]}
