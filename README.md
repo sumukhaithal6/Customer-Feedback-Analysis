@@ -13,3 +13,4 @@ To get the API Key register at IBM Cloud and create a resource - Natural Languag
  Example: python main.py --domain airlines --url https://www.tripadvisor.in/Airline_Review-d8729004-Reviews-Air-India --airline "Air India"
  
  If the reviews are already available in our dataset(airlines.csv) , the critical issues are displayed based on the categories in the domain
+ Download the Chromedriver and enter the path in the web_scraping.py file.
