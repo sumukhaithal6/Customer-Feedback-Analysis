@@ -38,7 +38,7 @@ def scrape(url, hotel_name, domain='hotels'):
     chromeOptions.add_argument('--headless')
     chromeOptions.add_argument('--incognito')
     driver = webdriver.Chrome(
-        "C:/Users/Sumukh/Downloads/chromedriver_win32/chromedriver.exe", options=chromeOptions)
+        "chromedriver.exe", options=chromeOptions)#path to chromedriver
     temp = []
     page = 0
     driver.get(url)
@@ -132,7 +132,7 @@ def scrape_airlines(url, airline, domain='airlines'):
     chromeOptions.add_argument('--incognito')
     #driver = webdriver.Chrome(options=chromeOptions)
     driver = webdriver.Chrome(
-        "C:/Users/Sumukh/Downloads/chromedriver_win32/chromedriver.exe", options=chromeOptions)
+        "chromedriver.exe", options=chromeOptions)#enter path to chromedriver
 
     page = 0
     driver.get(url)
