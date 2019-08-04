@@ -5,11 +5,10 @@ import sys
 from web_scraping import scrape
 from review_categorizer import review_categorizer, review_categorizer_airline
 from ranking_full import rank_revrank_airlines, rank_revrank_hotels
-
+from helper import print_text_in_read, check_link_health
 
 def capture_stdout(path='debug.log'):
     sys.stdout = open(path, 'a')
-
 
 def display(name, domain):
     if domain == "hotels":
@@ -31,8 +30,7 @@ def display(name, domain):
             buckets[bucket].append((row['Review'], row['Recency']))
     return buckets
 
-
-def main():
+def parse_arguments():
     parser = argparse.ArgumentParser(description='Customer Feedback Model')
     parser.add_argument('--domain',
                         default="hotels", help='Domain : hotels or airlines')
@@ -41,6 +39,9 @@ def main():
     parser.add_argument('--hotel_name', default=None, help='Name of Hotel')
     parser.add_argument('--airline', default=None, help='Name of Airline')
     args = parser.parse_args()
+    return args
+
+def main(args):
     categories = {
         "hotels": ['Cleanliness', 'Amenities', 'Facility', 'Food', 'Staff', 'Ambience', 'Price'],
         "airlines": ['Cleanliness', 'Amenities', 'Checkin', 'Food', 'Service', 'Flight Ambience', 'Price']
@@ -100,5 +101,9 @@ def main():
 
 
 if __name__ == "__main__":
+    args = parse_arguments()
+    if not check_link_health(args.url):
+        print_text_in_read("ERROR: link specified is not reachable")
+        sys.exit(0)
     capture_stdout()
-    main()
+    main(args)
