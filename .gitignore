@@ -1,0 +1,7 @@
+debug.log
+.pytest_cache/*
+__pycache__
+.vscode/*
+.py[cod]
+.mypy_cache
+.coverage
