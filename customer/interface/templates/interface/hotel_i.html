@@ -70,6 +70,13 @@
           <h4>Choose your hotel!</h4>
         </header>
 
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search hotel name" aria-label="hotel_name" aria-describedby="basic-addon2" onkeyup="search_hotel()" id="searchbar">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">Search</button>
+          </div>
+        </div>
+
 
         <div class="row portfolio-container">
 
@@ -597,6 +604,7 @@
   <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
+
   <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
   <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
@@ -615,6 +623,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="{% static 'js/main2.js' %}"></script>
+  <script src="{% static 'js/hotels.js' %}"></script>
 
 </body>
 </html>
