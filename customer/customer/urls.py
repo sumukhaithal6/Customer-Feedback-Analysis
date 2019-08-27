@@ -20,7 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('mil.urls')),
     path('hotel/', include('interface.urls')),
-    path('airline/', include('interface.urls')),
-    path('categories/', include('buckets.urls')),
     path('categories/', include('buckets.urls')),
 ]

@@ -4,7 +4,7 @@ import pandas as pd
 
 def fun(search_topic):
     #print(search_topic)
-    df=pd.read_csv("file:///home/spielerr/Spielerr/MIL%2019/code/Customer-Feedback-Analysis/customer/buckets/final.csv")
+    df=pd.read_csv(r"./buckets/final.csv")
     df_temp=df[df['Hotel Name']==search_topic]
 
     buckets={'ambience':[],'amenities':[],'cleanliness':[],'facility':[],'food':[],'price':[],'staff':[], 'name':search_topic, 'image': 'img/analysis/' + search_topic + '.jpg'}
@@ -33,7 +33,7 @@ def categories(request, hotelname):
 
 def fun_airline(search_topic):
     #print(search_topic)
-    df=pd.read_csv("file:///home/spielerr/Spielerr/MIL%2019/code/Customer-Feedback-Analysis/customer/buckets/final_airline2.csv")
+    df=pd.read_csv(r"./buckets/final_airline2.csv")
     df_temp=df[df['Airline']==search_topic]
 
     buckets={'ambience':[],'amenities':[],'checkin':[],'cleanliness':[],'food':[],'price':[],'service':[], 'name':search_topic}

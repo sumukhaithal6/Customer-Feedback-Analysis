@@ -25,7 +25,7 @@ SECRET_KEY = '@x7w%13_nm9qq@au%(jt34!!tf8h%h1=*j_cfdx^9jg)n_v5vu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.16.171.64','localhost','10.16.160.68','[::1]','0.0.0.0']
 
 STATICFILES_DIRS = [
     "/mil/static",
